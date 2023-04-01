@@ -1,0 +1,125 @@
+body{
+	background-color: #B6BEC0;
+	color:#571845;
+}
+
+
+.navbar-brand h1{
+	font-family: "Lora", serif;
+	color: #DABC98;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#header-nav{
+	background-color: #38181D;
+	border-radius: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+#nav-list a{
+	color: #65A4B6;
+	text-align: center;
+	font-weight: bold;
+	background-color: #DABC98;
+}
+#nav-list a:hover{
+	background: #F5E3BD;
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+.navbar-header{
+    margin-bottom: 10px;
+}
+
+.text-center h2{
+    color:  #3A4933;
+}
+
+.BackTopStyle{
+    background-color: #C70039;
+    border-radius: 3px;
+    color: #65A307;
+    font-style: italic;
+}
+
+.BackTopStyle:hover{
+    background-color: #cccccc;
+    text-decoration: none;
+    color: #65A307;
+}   
+
+/* Mostar menu desplegable en el celular */
+@media only screen and (min-width: 576px) {
+    .collapse {
+        display: block;
+    }
+
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-nav.navbar-left {
+       float: left;
+       margin: 0;
+    }
+
+    .navbar-nav.navbar-right {
+       float: right;
+       margin: 0;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+/* Eliminar barra a la derecha en rango de 576 a 768px*/
+@media (min-width: 576px) and (max-width: 768px){
+
+    .navbar-nav{
+        visibility: hidden;
+    }
+
+    .col-xxs-6{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 50%;
+    }
+
+    .col-mdd-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
+
+/* Características al ser una pagina para telefono*/
+@media (max-width: 576px){
+        #collapsable-nav a span{
+        font-size: 1.5em;
+        margin-right: 5px;
+    }
+}
